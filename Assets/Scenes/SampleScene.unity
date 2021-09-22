@@ -221,8 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: b27974503774c62439b73b01409fd4cb, type: 3}
   deactivated: {fileID: 21300000, guid: 6307f7821510ca44fbf3502bd235590a, type: 3}
-  activateSound: {fileID: 0}
-  deactivateSound: {fileID: 0}
+  activateSound: {fileID: 8300000, guid: bfa5d173642c8784cabc3d2108e656a7, type: 3}
+  deactivateSound: {fileID: 8300000, guid: ba7eecceae25ccb4dbef1fb1d80eb0ab, type: 3}
 --- !u!61 &325408627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -891,8 +891,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: b16a05593810eba48b245ee8a4be196b, type: 3}
   deactivated: {fileID: 21300000, guid: 69edc20209543d84cb6b233ba3189318, type: 3}
-  activateSound: {fileID: 8300000, guid: 979c352a8d908774bbdd30f21a49d283, type: 3}
-  deactivateSound: {fileID: 8300000, guid: f06b58bb829230c4c9c88d27db7a4952, type: 3}
+  activateSound: {fileID: 8300000, guid: ba7eecceae25ccb4dbef1fb1d80eb0ab, type: 3}
+  deactivateSound: {fileID: 8300000, guid: bfa5d173642c8784cabc3d2108e656a7, type: 3}
 --- !u!61 &1034658320
 BoxCollider2D:
   m_ObjectHideFlags: 0

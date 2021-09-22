@@ -11,6 +11,10 @@ public class timer : MonoBehaviour
 
     private float minutes;
     
+    private AudioSource source;
+    
+    public AudioClip ticSound;
+    
     public Text timeScreen;
         
     // Start is called before the first frame update
@@ -19,6 +23,8 @@ public class timer : MonoBehaviour
         time = 90;
         lastTime = time % 60;
         Debug.Log(lastTime);
+        gameObject.AddComponent<AudioSource>();
+        source = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,6 +43,7 @@ public class timer : MonoBehaviour
         if (lastTime - seconds >= 1)
         {
             Debug.Log(Time.deltaTime);
+            source.PlayOneShot(ticSound);
             lastTime = seconds;
         }
         
