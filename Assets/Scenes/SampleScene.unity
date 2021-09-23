@@ -221,10 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: b27974503774c62439b73b01409fd4cb, type: 3}
   deactivated: {fileID: 21300000, guid: 6307f7821510ca44fbf3502bd235590a, type: 3}
-  source: {fileID: 0}
-  activateSound: {fileID: 8300000, guid: bfa5d173642c8784cabc3d2108e656a7, type: 3}
-  deactivateSound: {fileID: 8300000, guid: ba7eecceae25ccb4dbef1fb1d80eb0ab, type: 3}
-  active: 0
+  activateSound: {fileID: 8300000, guid: 22533fb222e4db54fa66eff25e0af1e1, type: 3}
+  deactivateSound: {fileID: 8300000, guid: 8388931de3615f0448878ea912b65db9, type: 3}
 --- !u!61 &325408627
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -483,10 +481,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: 54cab62b1f3c2bc4c96da2433bf4ecbd, type: 3}
   deactivated: {fileID: 21300000, guid: e9ef575c369a1a54eb7ba71b07a8e857, type: 3}
-  source: {fileID: 0}
   activateSound: {fileID: 8300000, guid: 45ecbd49b3ceaa24db602e29f3b2d655, type: 3}
   deactivateSound: {fileID: 8300000, guid: 45ecbd49b3ceaa24db602e29f3b2d655, type: 3}
-  active: 0
 --- !u!1 &494702971
 GameObject:
   m_ObjectHideFlags: 0
@@ -585,10 +581,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: 3b599dba6e89b7143b8229ad83f91342, type: 3}
   deactivated: {fileID: 21300000, guid: 15c9a09d6dd9ab74482e5a51d1c269aa, type: 3}
-  source: {fileID: 0}
-  activateSound: {fileID: 8300000, guid: 74ec5bcd2781a9944bbf52923a61cf20, type: 3}
-  deactivateSound: {fileID: 8300000, guid: 4af559ce9d029e840b26122ab78e78c6, type: 3}
-  active: 0
+  activateSound: {fileID: 8300000, guid: 15405541b807331419cc87a7c225c2c2, type: 3}
+  deactivateSound: {fileID: 8300000, guid: fa234839786adb045abf6d5fe2e43b82, type: 3}
 --- !u!58 &494702975
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1094,10 +1088,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: 6fda97bd3a63ada4aa554f21e598ada5, type: 3}
   deactivated: {fileID: 21300000, guid: 0e53b17c68608ba4b8da24d12476babd, type: 3}
-  source: {fileID: 0}
   activateSound: {fileID: 8300000, guid: 45ecbd49b3ceaa24db602e29f3b2d655, type: 3}
   deactivateSound: {fileID: 8300000, guid: 45ecbd49b3ceaa24db602e29f3b2d655, type: 3}
-  active: 0
 --- !u!1 &954432057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,10 +1238,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: 9f99c0883866cd7468d62ba6ca16f266, type: 3}
   deactivated: {fileID: 21300000, guid: 327123e0bf30e154c9e0d36f4b7432fa, type: 3}
-  source: {fileID: 0}
   activateSound: {fileID: 8300000, guid: 45ecbd49b3ceaa24db602e29f3b2d655, type: 3}
   deactivateSound: {fileID: 8300000, guid: 45ecbd49b3ceaa24db602e29f3b2d655, type: 3}
-  active: 0
 --- !u!1 &1034658316
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,10 +1338,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: b16a05593810eba48b245ee8a4be196b, type: 3}
   deactivated: {fileID: 21300000, guid: 69edc20209543d84cb6b233ba3189318, type: 3}
-  source: {fileID: 0}
-  activateSound: {fileID: 8300000, guid: ba7eecceae25ccb4dbef1fb1d80eb0ab, type: 3}
-  deactivateSound: {fileID: 8300000, guid: bfa5d173642c8784cabc3d2108e656a7, type: 3}
-  active: 0
+  activateSound: {fileID: 8300000, guid: bfa5d173642c8784cabc3d2108e656a7, type: 3}
+  deactivateSound: {fileID: 8300000, guid: ba7eecceae25ccb4dbef1fb1d80eb0ab, type: 3}
 --- !u!61 &1034658320
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1634,13 +1622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85bfef3245d7d7b4384ab68e0748ea3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
-  lastTime: 0
-  seconds: 0
-  minutes: 0
-  source: {fileID: 0}
-  ticSound: {fileID: 8300000, guid: 782cf37aabd056e4c8795e9f04a2e613, type: 3}
-  timeScreen: {fileID: 1435533740}
 --- !u!1 &1501290087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,10 +1720,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: cf6f68d4f7f388149aa6f8e2e43301dd, type: 3}
   deactivated: {fileID: 21300000, guid: 1f379036d7c73d0498566acfd699a56f, type: 3}
-  source: {fileID: 0}
-  activateSound: {fileID: 8300000, guid: 22533fb222e4db54fa66eff25e0af1e1, type: 3}
-  deactivateSound: {fileID: 8300000, guid: 8388931de3615f0448878ea912b65db9, type: 3}
-  active: 0
+  activateSound: {fileID: 8300000, guid: 74ec5bcd2781a9944bbf52923a61cf20, type: 3}
+  deactivateSound: {fileID: 8300000, guid: 4af559ce9d029e840b26122ab78e78c6, type: 3}
 --- !u!58 &1501290091
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2106,10 +2085,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activated: {fileID: 21300000, guid: 4b19987caf9de1f4cb7aa03f7f4e125e, type: 3}
   deactivated: {fileID: 21300000, guid: bda2c1523d7f74b4f93b061e31628887, type: 3}
-  source: {fileID: 0}
   activateSound: {fileID: 8300000, guid: dd1c1403667766349894767ee33fdd63, type: 3}
   deactivateSound: {fileID: 8300000, guid: 1394cc3bfcd309f4ea3c5b0570832e80, type: 3}
-  active: 0
 --- !u!225 &1920035354
 CanvasGroup:
   m_ObjectHideFlags: 0

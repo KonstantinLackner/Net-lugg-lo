@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class triggerActive : MonoBehaviour
+public class TriggerActive : MonoBehaviour
 {
     public Sprite activated;
     public Sprite deactivated;
