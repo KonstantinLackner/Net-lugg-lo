@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 325408626}
   - component: {fileID: 325408627}
   m_Layer: 0
-  m_Name: blueSwitchOff
+  m_Name: blueSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 445745085}
   - component: {fileID: 445745084}
   m_Layer: 0
-  m_Name: orangeCableGood
+  m_Name: orangeCable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -496,7 +496,7 @@ GameObject:
   - component: {fileID: 494702974}
   - component: {fileID: 494702975}
   m_Layer: 0
-  m_Name: blueButtonOff
+  m_Name: blueButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 596436240}
   - component: {fileID: 596436241}
   m_Layer: 0
-  m_Name: bellowOff
+  m_Name: bellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -848,7 +848,7 @@ GameObject:
   - component: {fileID: 837378799}
   - component: {fileID: 837378798}
   m_Layer: 0
-  m_Name: blueCableGood
+  m_Name: blueCable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1103,7 +1103,7 @@ GameObject:
   - component: {fileID: 954432062}
   - component: {fileID: 954432060}
   m_Layer: 0
-  m_Name: greenCableGood
+  m_Name: greenCable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1253,7 +1253,7 @@ GameObject:
   - component: {fileID: 1034658319}
   - component: {fileID: 1034658320}
   m_Layer: 0
-  m_Name: redSwitchOff
+  m_Name: redSwitch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1635,7 +1635,7 @@ GameObject:
   - component: {fileID: 1501290090}
   - component: {fileID: 1501290091}
   m_Layer: 0
-  m_Name: greenButtonOff
+  m_Name: greenButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2000,7 +2000,7 @@ GameObject:
   - component: {fileID: 1920035354}
   - component: {fileID: 1920035355}
   m_Layer: 0
-  m_Name: redButtonOff
+  m_Name: redButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

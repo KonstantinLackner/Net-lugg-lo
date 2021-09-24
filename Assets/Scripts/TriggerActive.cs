@@ -7,7 +7,7 @@ public class TriggerActive : MonoBehaviour
     private AudioSource source;
     public AudioClip activateSound;
     public AudioClip deactivateSound;
-    private bool active;
+    public bool active { get; set; }
 
     // Start is called before the first frame update
     void Start()
