@@ -9,21 +9,26 @@ namespace DefaultNamespace
         private int pumpCount;
         public Sprite squeezed;
         public Sprite notSqueezed;
+        private AudioSource source;
+        public AudioClip activateSound;
+        public AudioClip deactivateSound;
         
         private void Start()
         {
             needle = GameObject.Find("needle");
             pumpCount = 0;
+            gameObject.AddComponent<AudioSource>();
+            source = gameObject.GetComponent<AudioSource>();
         }
 
         private void Update()
         {
-            rotateNeedle(0.01f);
+            rotateNeedle(10f);
         }
 
         private void rotateNeedle(float rotation)
         {
-            needle.transform.Rotate(0f,0f,rotation);
+            needle.transform.Rotate(0f,0f,rotation * Time.deltaTime);
             
             // Sanity check
             if (needle.transform.localRotation.z > 0.7f)
@@ -37,14 +42,16 @@ namespace DefaultNamespace
 
         private void OnMouseDown()
         {
-            rotateNeedle(-10f);
+            rotateNeedle(-5000f);
             GetComponent<SpriteRenderer>().sprite = squeezed;
+            source.PlayOneShot(activateSound);
         }
 
         private void OnMouseUp()
         {
-            rotateNeedle(0.5f);
+            rotateNeedle(50f);
             GetComponent<SpriteRenderer>().sprite = notSqueezed;
+            source.PlayOneShot(deactivateSound);
         }
     }
 }
