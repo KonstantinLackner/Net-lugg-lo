@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueBox : MonoBehaviour
 {
@@ -33,6 +34,7 @@ public class DialogueBox : MonoBehaviour
         }
         
         CloseDialogueBox();
+        SceneManager.LoadScene("Scenes/Game");
     }
 
     private void CloseDialogueBox()
