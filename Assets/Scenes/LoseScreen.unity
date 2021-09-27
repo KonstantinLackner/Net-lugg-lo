@@ -242,7 +242,9 @@ MonoBehaviour:
   hints: {fileID: 8300000, guid: e74a9b87731049140885cc0f09a33e70, type: 3}
   interruptsBad:
   - {fileID: 8300000, guid: ec7a03a0a5826054b92631990befbf68, type: 3}
-  interruptsGood: []
+  - {fileID: 8300000, guid: c00607351e581564297861c82e2ceaea, type: 3}
+  - {fileID: 8300000, guid: e71f31fe568a3c94bae158234cace1d2, type: 3}
+  - {fileID: 8300000, guid: 2685aa7f2454c7a4bb314d3ca3d881b5, type: 3}
 --- !u!4 &1104906617
 Transform:
   m_ObjectHideFlags: 0

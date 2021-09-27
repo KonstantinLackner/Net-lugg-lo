@@ -8,7 +8,6 @@ public class Heinz : MonoBehaviour
     public AudioClip hints;
     private bool playing;
     public AudioClip[] interruptsBad;
-    public AudioClip[] interruptsGood;
     
     // Start is called before the first frame update
     void Start()
@@ -36,27 +35,18 @@ public class Heinz : MonoBehaviour
         source.UnPause();
     }
 
-    private void Update()
+    public void interrupt()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && playing)
-        {
-            StartCoroutine(interruptBad());
-        }
+        StartCoroutine(interruptCoRoutine());
     }
 
-    IEnumerator interruptBad()
+    private IEnumerator interruptCoRoutine()
     {
         pauseAudio();
+        yield return new WaitForSeconds(0.5f);
         source2.PlayOneShot(interruptsBad[Random.Range(0,interruptsBad.Length)]);
         yield return new WaitWhile(() => source2.isPlaying);
-        resumeAudio();
-    }
-
-    IEnumerator interruptGood()
-    {
-        pauseAudio();
-        source2.PlayOneShot(interruptsGood[Random.Range(0, interruptsGood.Length)]);
-        yield return new WaitWhile(() => source2.isPlaying);
+        yield return new WaitForSeconds(0.5f);
         resumeAudio();
     }
 }
