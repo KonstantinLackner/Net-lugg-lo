@@ -48,15 +48,15 @@ public class Heinz : MonoBehaviour
     {
         pauseAudio();
         source2.PlayOneShot(interruptsBad[Random.Range(0,interruptsBad.Length)]);
-        yield return new WaitWhile(() => source.isPlaying);
+        yield return new WaitWhile(() => source2.isPlaying);
         resumeAudio();
     }
 
     IEnumerator interruptGood()
     {
         pauseAudio();
-        source.PlayOneShot(interruptsGood[Random.Range(0, interruptsGood.Length)]);
-        yield return new WaitWhile(() => source.isPlaying);
+        source2.PlayOneShot(interruptsGood[Random.Range(0, interruptsGood.Length)]);
+        yield return new WaitWhile(() => source2.isPlaying);
         resumeAudio();
     }
 }
