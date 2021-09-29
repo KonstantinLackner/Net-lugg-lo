@@ -34,7 +34,14 @@ public class DialogueBox : MonoBehaviour
         }
         
         CloseDialogueBox();
-        SceneManager.LoadScene("Scenes/Game");
+        if (SceneManager.GetActiveScene().name.Equals("Intro"))
+        {
+            SceneManager.LoadScene("Scenes/Game");
+        } else if (SceneManager.GetActiveScene().name.Equals("WinScreen"))
+        {
+            SceneManager.LoadScene("Scenes/StartScreen");
+        }
+        
     }
 
     private void CloseDialogueBox()

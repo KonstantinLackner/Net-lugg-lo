@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
 {
@@ -7,12 +8,12 @@ namespace DefaultNamespace
     {
         private GameObject bellowNeedle;
         private TriggerActive blueButton;
-        private TriggerActive blueCable;
+        private TriggerActiveOnce blueCable;
         private TriggerActive greenButton;
         private TriggerActive redSwitch;
         private TriggerActive blueSwitch;
-        private TriggerActive orangeCable;
-        private TriggerActive greenCable;
+        private TriggerActiveOnce orangeCable;
+        private TriggerActiveOnce greenCable;
         private Ripcord ripcord;
         private TriggerActive redButton;
         
@@ -33,12 +34,12 @@ namespace DefaultNamespace
         {
             bellowNeedle = GameObject.Find("needle");
             blueButton = GameObject.Find("blueButton").GetComponent<TriggerActive>();
-            blueCable = GameObject.Find("blueCable").GetComponent<TriggerActive>();
+            blueCable = GameObject.Find("blueCable").GetComponent<TriggerActiveOnce>();
             greenButton = GameObject.Find("greenButton").GetComponent<TriggerActive>();
             redSwitch = GameObject.Find("redSwitch").GetComponent<TriggerActive>();
             blueSwitch = GameObject.Find("blueSwitch").GetComponent<TriggerActive>();
-            orangeCable = GameObject.Find("orangeCable").GetComponent<TriggerActive>();
-            greenCable = GameObject.Find("greenCable").GetComponent<TriggerActive>();
+            orangeCable = GameObject.Find("orangeCable").GetComponent<TriggerActiveOnce>();
+            greenCable = GameObject.Find("greenCable").GetComponent<TriggerActiveOnce>();
             ripcord = GameObject.Find("ripcord").GetComponent<Ripcord>();
             redButton = GameObject.Find("redButton").GetComponent<TriggerActive>();
 
@@ -63,10 +64,12 @@ namespace DefaultNamespace
                 Debug.Log("timer ran out");
                 if (bombConditionsFullfilled())
                 {
+                    SceneManager.LoadScene("");
                     Debug.Log("Won");
                 }
                 else
                 {
+                    SceneManager.LoadScene("Scenes/LoseScreen");
                     Debug.Log("Lost");
                 }
             }
