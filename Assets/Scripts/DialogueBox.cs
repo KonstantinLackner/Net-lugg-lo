@@ -12,6 +12,17 @@ public class DialogueBox : MonoBehaviour
 
     private TypewriterEffect typewriterEffect;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene("Scenes/Intro");
+        } else if (Input.GetKeyDown((KeyCode.Escape)))
+        {
+            Application.Quit();
+        }
+    }
+
     private void Start()
     {
         typewriterEffect = GetComponent<TypewriterEffect>();
