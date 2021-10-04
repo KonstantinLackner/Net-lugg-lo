@@ -28,6 +28,8 @@ namespace DefaultNamespace
         private bool ripcordNotToFarOut;
         private bool redButtonValue;
 
+        private float bellowNeedleValue;
+
         private Timer timer;
 
         private void Start()
@@ -44,11 +46,15 @@ namespace DefaultNamespace
             redButton = GameObject.Find("redButton").GetComponent<TriggerActive>();
 
             timer = GameObject.Find("timer").GetComponent<Timer>();
+
+            bellowNeedleValue = bellowNeedle.transform.localRotation.z;
         }
 
         private void Update()
         {
-            bellowInUpperThird = bellowNeedle.transform.localRotation.z > 0.55f;
+            bellowNeedleValue = bellowNeedle.transform.localRotation.z;
+
+            Debug.Log(bellowNeedle.transform.localRotation.z);
             blueButtonValue = blueButton.active;
             blueCableValue = blueCable.active;
             greenButtonValue = greenButton.active;
@@ -64,7 +70,7 @@ namespace DefaultNamespace
                 Debug.Log("timer ran out");
                 if (bombConditionsFullfilled())
                 {
-                    SceneManager.LoadScene("");
+                    SceneManager.LoadScene("Scenes/WinScreen");
                     Debug.Log("Won");
                 }
                 else
@@ -128,7 +134,7 @@ namespace DefaultNamespace
                 checkSum++;
             }
 
-            if (bellowNeedle.transform.localRotation.z < -0.5f)
+            if (bellowNeedle.transform.localRotation.z > -0.5f)
             {
                 checkSum++;
             }
